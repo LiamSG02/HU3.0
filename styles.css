@@ -1,0 +1,73 @@
+:root {
+    --color-primary: #0d1318; 
+    --color-secondary: #01baef;
+    --color-accent: #ebebf2;
+    --color-white: #fff;
+    --color-body: #0d1318;
+    --color-bold: #01baef;
+}
+
+body {
+    background-color: var(--color-body);
+    color: var(--color-accent);
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 1.6em;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.titles {
+    color: var(--color-secondary);
+}
+
+.heading {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.h1-large {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+.btn {
+    background-color: var(--color-secondary);
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 20px 15px;
+    width: 30%; 
+    text-align: center;
+    transition: 200ms;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.tate-rich {
+    max-width: 100%;
+    height: auto;
+    object-fit: no-repeat 50%;
+    
+}
+
+.andrew-tate {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-gap: 6%;
+}
