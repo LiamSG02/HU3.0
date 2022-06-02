@@ -55,8 +55,6 @@ p {
     border: 0;
     font-size: 20px;
     user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
 .tate-rich {
@@ -71,3 +69,10 @@ p {
     grid-template-columns: 47% 47%;
     grid-gap: 6%;
 }
+
+@media screen and (max-width: 768px) {
+    .andrew-tate { grid-template-columns: repeat(1, 1fr); }
+    }
+  .btn {
+      width: 100%;
+  }
