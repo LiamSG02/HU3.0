@@ -14,10 +14,31 @@ body {
 }
 
 p {
-    line-height: 1.6em;
-    opacity: 0.80;
+    line-height: 1.4em;
+    opacity: 0.90;
     margin-top: 0;
-    font-family: 'Cormorant', serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.logo {
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    border-bottom: solid 1px var(--color-secondary);
+}
+
+.nav-links {
+    display: flex;
 }
 
 .p-center {
@@ -51,6 +72,10 @@ img {
     height: auto;
 }
 
+.header-text {
+    text-align: center;
+}
+
 .heading {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -78,6 +103,38 @@ h4 {
     hr {
         width: 50%;
     }
+    .nav-links .btn {
+        display: none;
+    }
+    .logo {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    .h1-large {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
 }
 
 .btn {
@@ -86,7 +143,8 @@ h4 {
     cursor: pointer;
     font-weight: bold;
     padding: 20px 15px;
-    width: 768px; 
+    margin-top: 50px;
+    width: 30%; 
     text-align: center;
     transition: 200ms;
     box-sizing: border-box;
@@ -110,12 +168,52 @@ h4 {
 }
 
 .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    
+}
 
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 20px 0;
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.box {
+    width: 350px;
+    height: auto;
+    border: 1px solid var(--color-secondary);
+    box-sizing: border-box;
+    margin: 50px auto 0px auto;
 }
 
 @media screen and (max-width: 768px) {
-    .about { grid-template-columns: repeat(1, 1fr); }
-    }
-  .btn {
-      width: 100%;
+  .about { 
+      grid-template-columns: repeat(1, 1fr); 
   }
+
+  .btn {
+      width: 80%;
+  }
+
+  .testimonials {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .tate-rich {
+      margin-bottom: 50px;
+  }
+  .header-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
