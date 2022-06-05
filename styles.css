@@ -18,7 +18,11 @@ p {
     opacity: 0.90;
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
-    text-align: justify;
+    text-align: left;
+}
+
+strong {
+    color: var(--color-white);
 }
 
 .logo {
@@ -148,9 +152,14 @@ h4 {
     text-align: center;
     transition: 200ms;
     box-sizing: border-box;
-    border: 0;
+    border: solid 1px var(--color-secondary);
     font-size: 20px;
     user-select: none;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .tate-rich {
