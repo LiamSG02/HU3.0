@@ -41,9 +41,6 @@ nav {
     border-bottom: solid 1px var(--color-secondary);
 }
 
-.nav-links {
-    display: flex;
-}
 
 .p-center {
     text-align: center;
@@ -107,20 +104,12 @@ h4 {
     hr {
         width: 50%;
     }
-    .nav-links .btn {
-        display: none;
-    }
     .logo {
         margin: auto;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        margin: 0;
-        padding: 0;
-    }
-
     .logo {
         letter-spacing: 0px;
     }
@@ -162,7 +151,7 @@ h4 {
     color: var(--color-secondary);
 }
 
-.tate-rich {
+.about-image {
     max-width: 100%;
     height: auto;
     object-fit: no-repeat 50%;
@@ -219,7 +208,7 @@ h4 {
   .testimonials {
       grid-template-columns: repeat(1, 1fr);
   }
-  .tate-rich {
+  .about-image {
       margin-bottom: 50px;
   }
   .header-grid {
